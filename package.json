@@ -1,0 +1,22 @@
+{
+  "name": "policy-dsl",
+  "version": "1.0.0",
+  "description": "FIXME",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "tap-bail": "0.0.0",
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "tape \"test/**/*.test.js\"",
+    "test:watch": "chokidar --initial \"src/**/*.js\" \"src/**/*.js\" \"test/**/*.js\" -c \"npm test | tap-bail\"",
+    "test:spec": "npm test | tap-spec"
+  },
+  "keywords": [],
+  "author": "Jiri Spacek",
+  "license": "MIT"
+}

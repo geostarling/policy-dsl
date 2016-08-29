@@ -1,0 +1,65 @@
+### Environment configuration ###
+.env
+
+### Node ###
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules/*
+
+### Sass ###
+.sass-cache
+*.css.map
+
+### JetBrains ###
+*.iml
+.idea/
+
+### Archives ###
+*.gz
+*.zip
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
+
+### Project-specific ###
+
+# Continuous deployment
+.deploy_key
+
+# Compiled files
+dist/
+.tmp
+
+# Temporary stuff
+tmp/
