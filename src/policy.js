@@ -84,7 +84,7 @@ function resolutions(userResolutions) {
 }
 
 function resolution(resFn) {
-  return function() {
+  return function resolutionWrapper() {
     // FIXME change var names to something sane you slacker!
     var prevFn = this;
     if (!prevFn || typeof prevFn !== 'function') {
@@ -294,7 +294,7 @@ var predicateProto = {
 // FIXME
 function makePredicate(predFn, predProto) {
   return function predicateWrapper() {
-    var pred = predFn.apply(null, arguments);
+    var pred = predFn.apply(this, arguments);
     var proto;
     if (predProto) {
       proto = extend(clone(predProto), predicateProto);
